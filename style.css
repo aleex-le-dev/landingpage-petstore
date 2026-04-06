@@ -149,14 +149,9 @@ nav > #utility {
 
 .card-large,
 .card-med {
-    /*    border: 1px solid orange;*/
-    flex: 1;
-    /*    width: var(--nav-card-size);*/
-
     position: relative;
     display: flex;
     flex-direction: column;
-    /*    padding: 24px;*/
     transition: var(--hover-timing);
     cursor: pointer;
 }
@@ -469,58 +464,89 @@ section h2 {
     text-align: center;
     color: var(--text-01);
     margin-bottom: 32px;
-    /*    padding-bottom: 24px;*/
 }
 
+/* Services Sections */
+.services-list-container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+    margin-top: 40px;
+}
 
 .card-wide {
     flex-direction: row;
     padding: 0;
 }
 
+.card-wide.reverse {
+    flex-direction: row-reverse;
+}
+
 .card-wide .card-image {
-    width: 50%;
+    width: 45%;
     border-radius: 0;
 }
 
-.card-image img {
-    width: 80%;
-    height: 80%;
-}
-
-.card-wide > ul {
-    padding: 40px;
-}
-
-.card-wide > ul > li {
+.card-wide .card-image img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 60px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    grid-gap: 24px;
+    flex-direction: column;
+    flex: 1;
+    background: white;
+}
+
+.service-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-01);
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.service-subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--brand-01);
+    font-weight: 700;
     margin-bottom: 16px;
 }
 
-
-.card-wide .subtitle {
-    font-size: 14px;
-    line-height: 1.4;
-    font-weight: 500;
-    /*    margin-top: 8px;*/
-    margin-bottom: 24px;
-}
-
-.card-wide > ul > li span {
-    font-size: 16px;
-}
-
-.card-large > ul > li:last-of-type {
+.service-list {
+    list-style: none;
     margin-bottom: 40px;
+    padding: 0 !important;
 }
 
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(45, 42, 38, 0.05);
+    font-size: 16px;
+    font-weight: 500;
+}
 
-.card-large button {
-    margin-top: auto;
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-item a {
+    color: var(--text-01);
+    text-decoration: none;
+}
+
+.service-item .price {
+    font-weight: 700;
+    color: var(--text-01);
 }
 
 #locate > div {
@@ -551,21 +577,12 @@ section h2 {
     text-align: center;
 }
 
-
-.btn-group {
-    display: flex;
-    flex-direction: row;
-    grid-gap: 16px;
-}
-
 footer {
     background: var(--text-01);
     padding: 80px 80px 0px;
     margin-top: 80px;
     display: flex;
 }
-
-
 
 footer ul {
     display: flex;
@@ -577,9 +594,7 @@ footer ul {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 80px;
-
 }
-
 
 footer ul li a {
     color: var(--light-01);
@@ -587,11 +602,9 @@ footer ul li a {
     font-size: 14px;
 }
 
-
 footer ul li {
     color: var(--light-01);
     padding: 0;
-
 }
 
 /* Shop by Animal Masonry */
@@ -717,11 +730,19 @@ footer ul li {
     }
     .masonry-item { height: 300px !important; grid-column: auto !important; grid-row: auto !important; }
 
-    .card-wide {
-        flex-direction: column;
+    .card-wide,
+    .card-wide.reverse {
+        flex-direction: column !important;
     }
     .card-wide .card-image {
-        width: 100%;
+        width: 100% !important;
+        height: 250px !important;
+    }
+    .service-content {
+        padding: 40px var(--pg-margin) !important;
+    }
+    .service-title {
+        font-size: 28px !important;
     }
 
     #mission > div {

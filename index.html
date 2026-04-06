@@ -153,38 +153,67 @@
         </div>
     </section>
 
-    <section>
-        <h2>Nos Services Professionnels</h2>
+    <section id="services" style="padding: 100px var(--pg-margin); background: #FDFCFB;">
+        <h2 style="margin-bottom: 60px;">Nos Services Professionnels</h2>
+        <div class="services-list-container">
+            <!-- Service 1: Toilettage -->
+            <div class="card-large card-wide" id="serv-groom">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800" alt="Toilettage">
+                </div>
+                <div class="service-content">
+                    <span class="service-subtitle">Soins & Bien-être</span>
+                    <h3 class="service-title">Toilettage Canin</h3>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <a href="#">Soin du pelage complet</a>
+                            <span class="price">À partir de 60€</span>
+                        </div>
+                        <div class="service-item">
+                            <a href="#">Coupe de griffes & Hygiène</a>
+                            <span class="price">15€</span>
+                        </div>
+                        <div class="service-item">
+                            <a href="#">Spa & Massage relaxant</a>
+                            <span class="price">120€</span>
+                        </div>
+                    </div>
+                    <button class="btn-filled-dark">
+                        <span class="material-symbols-outlined">calendar_month</span>
+                        Réserver un créneau
+                    </button>
+                </div>
+            </div>
 
-        <ul class="services">
-            <li class="card-large card-dark card-wide" id="serv-groom">
-                <div class="card-image"><img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800" alt="Toilettage"></div>
-                <ul>
-                    Toilettage Canin<span class="subtitle">Une transformation royale pour votre fidèle compagnon.</span>
-                    <li><a href="#">Soin du pelage complet</a><span>À partir de 60€</span></li>
-                    <li><a href="#">Coupe de griffes</a><span>15€</span></li>
-                    <li><a href="#">Spa & Massage relaxant</a><span>120€</span></li>
-                    <button class="btn-filled-dark"><span class="material-symbols-outlined">
-                            calendar_month
-                        </span>Réserver maintenant</button>
-
-                </ul>
-
-
-            </li>
-            <li class="card-large card-dark card-wide" id="serv-board">
-                <div class="card-image"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=800" alt="Pension"></div>
-                <ul>
-                    Pension & Garderie<span class="subtitle">Le confort de la maison, même pendant vos vacances.</span>
-                    <li><a href="#">Garderie à la journée</a><span>35€</span></li>
-                    <li><a href="#">Séjour longue durée</a><span>Sur devis</span></li>
-                    <button class="btn-filled-dark"><span class="material-symbols-outlined">
-                            calendar_month
-                        </span>Réserver maintenant</button>
-                </ul>
-
-            </li>
-        </ul>
+            <!-- Service 2: Pension -->
+            <div class="card-large card-wide reverse" id="serv-board">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=800" alt="Pension">
+                </div>
+                <div class="service-content">
+                    <span class="service-subtitle">Hébergement Premium</span>
+                    <h3 class="service-title">Pension & Garderie</h3>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <a href="#">Garderie à la journée</a>
+                            <span class="price">35€ / jour</span>
+                        </div>
+                        <div class="service-item">
+                            <a href="#">Séjour "Confort" (Nuitée)</a>
+                            <span class="price">À partir de 50€</span>
+                        </div>
+                        <div class="service-item">
+                            <a href="#">Séjour longue durée</a>
+                            <span class="price">Sur devis</span>
+                        </div>
+                    </div>
+                    <button class="btn-filled-dark">
+                        <span class="material-symbols-outlined">calendar_month</span>
+                        Réserver un séjour
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="testimonials" style="padding: 100px var(--pg-margin); background: #FDFCFB;">
