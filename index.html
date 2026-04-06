@@ -27,73 +27,11 @@
                L'Amapet <br> Boutique
             </div>
             <ul class="navigation-menu">
-                <li><a href="#">Produits</a>
-                    <ul class="subnav">
-                        <li class="card-med" id="sup-dog">
-                            <div class="card-image"><img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=400" alt="Chiens"></div>
-                            <a href="#">
-                                <span>Chiens</span>
-                                <span>Tout voir <span class="material-symbols-outlined">
-                                        arrow_forward
-                                    </span></span>
-                            </a>
-                        </li>
-                        <li class="card-med" id="sup-cat">
-                            <div class="card-image"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=400" alt="Chats"></div>
-                            <a href="#">
-                                <span>Chats</span>
-                                <span>Tout voir <span class="material-symbols-outlined">
-                                        arrow_forward
-                                    </span></span>
-                            </a>
-                        </li>
-                        <li class="card-med" id="sup-bird">
-                            <div class="card-image"><img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?auto=format&fit=crop&q=80&w=400" alt="Oiseaux"></div>
-                            <a href="#">
-                                <span>Oiseaux</span>
-                                <span>Tout voir <span class="material-symbols-outlined">
-                                        arrow_forward
-                                    </span></span>
-                            </a>
-                        </li>
-                        <li class="card-med" id="sup-fish">
-                            <div class="card-image"><img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&q=80&w=400" alt="Poissons"></div>
-                            <a href="#">
-                                <span>Poissons</span>
-                                <span>Tout voir <span class="material-symbols-outlined">
-                                        arrow_forward
-                                    </span></span>
-                            </a>
-                        </li>
-                    </ul>
-
-
-                <li><a href="#">Services</a>
-                    <ul class="subnav">
-                        <li class="card-med" id="serv-groom">
-                            <div class="card-image"><img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=400" alt="Toilettage"></div>
-                            <a href="#">
-                                <span>Toilettage</span>
-                                <span>Plus d'infos <span class="material-symbols-outlined">
-                                        arrow_forward
-                                    </span></span>
-                            </a>
-                        </li>
-                        <li class="card-med" id="serv-board">
-                            <div class="card-image"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=400" alt="Pension"></div>
-                            <a href="#">
-                                <span>Pension</span>
-                                <span>Plus d'infos <span class="material-symbols-outlined">
-                                        arrow_forward
-                                    </span></span>
-                            </a>
-                    </ul>
-                </li>
-                <li><a href="#locate">Magasins & Horaires</a>
-                </li>
-                <li>
-                    <a href="#">À Propos</a>
-                </li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#locate">Magasins</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div id="utility">
                 <span class="material-symbols-outlined">
@@ -110,16 +48,16 @@
         <h1>Tout ce dont vos compagnons ont besoin, en un seul endroit !</h1>
         <p style="font-size: 1.2rem; color: #45413E; max-width: 500px; margin-bottom: 20px;">De la nourriture premium aux soins relaxants, nous traitons vos animaux comme s'ils étaient les nôtres.</p>
         <div class="btn-group">
-            <button class="btn-filled-dark"><span class="material-symbols-outlined">
+            <button class="btn-filled-dark" onclick="document.querySelector('#products').scrollIntoView({behavior: 'smooth'})"><span class="material-symbols-outlined">
                     shopping_bag
                 </span>Acheter maintenant</button>
-            <button class="btn-outline-dark btn-hover-color"><span class="material-symbols-outlined">
+            <button class="btn-outline-dark btn-hover-color" onclick="document.querySelector('#services').scrollIntoView({behavior: 'smooth'})"><span class="material-symbols-outlined">
                     calendar_today
                 </span> Réserver un service</button>
         </div>
 
     </section>
-    <section class="shop-by-animal">
+    <section id="products" class="shop-by-animal">
         <h2>Acheter par Compagnon</h2>
         <div class="animal-masonry">
             <a href="#" class="masonry-item item-lg" style="background-image: url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800');">
@@ -269,6 +207,28 @@
         </div>
     </section>
 
+    <!-- Section À Propos -->
+    <section id="about" style="padding: 120px var(--pg-margin); background: #FFFFFF; display: flex; align-items: center; grid-gap: 80px;">
+        <div style="flex: 1;">
+            <h2 style="margin-bottom: 32px;">Notre Passion, Votre Boutique</h2>
+            <p style="font-size: 1.15rem; line-height: 1.8; opacity: 0.8; margin-bottom: 24px;">L'Amapet est née d'une conviction simple : nos animaux méritent le même niveau d'exigence et de soin que nous-mêmes. Depuis 10 ans, nous sélectionnons chaque produit avec un amour profond pour la nature et le bien-être animal.</p>
+            <p style="font-size: 1.15rem; line-height: 1.8; opacity: 0.8; margin-bottom: 40px;">Experts certifiés en nutrition et soin animalier, nous ne sommes pas qu'une simple animalerie. Nous sommes un lieu de vie et de conseils pour tous les amoureux des compagnons à quatre pattes, à plumes ou à écailles.</p>
+            <div style="display: flex; grid-gap: 40px;">
+                <div>
+                    <h4 style="font-size: 32px; color: var(--brand-01); margin-bottom: 5px;">10+</h4>
+                    <p style="font-size: 14px; opacity: 0.6; text-transform: uppercase;">Années</p>
+                </div>
+                <div>
+                    <h4 style="font-size: 32px; color: var(--brand-01); margin-bottom: 5px;">25k</h4>
+                    <p style="font-size: 14px; opacity: 0.6; text-transform: uppercase;">Clients</p>
+                </div>
+            </div>
+        </div>
+        <div style="flex: 1;">
+            <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&q=80&w=800" alt="About Image" style="width: 100%; border-radius: 32px; box-shadow: var(--card-hover);">
+        </div>
+    </section>
+
     <section id="locate" class="locate-section">
         <div class="locate-banner">
             <h2>Venez nous rendre visite</h2>
@@ -360,43 +320,89 @@
                 </div>
             </div>
 
-            <div class="footer-links-column">
-                <span class="footer-links-title">Produits</span>
-                <ul class="footer-links-list">
-                    <li><a href="#">Alimentation Premium</a></li>
-                    <li><a href="#">Jouets Interactifs</a></li>
-                    <li><a href="#">Repos & Confort</a></li>
-                    <li><a href="#">Hygiène & Soins</a></li>
-                </ul>
+    <!-- Section Contact -->
+    <section id="contact" style="padding: 100px var(--pg-margin); display: grid; grid-template-columns: 1fr 1fr; grid-gap: 80px; background: white;">
+        <div>
+            <h2 style="margin-bottom: 24px;">Besoin d'un conseil ?</h2>
+            <p style="margin-bottom: 48px; opacity: 0.7; line-height: 1.6;">Notre équipe passionnée est à votre écoute pour vous conseiller et répondre à toutes vos interrogations sur la santé de vos animaux.</p>
+            
+            <form style="display: flex; flex-direction: column; grid-gap: 20px;">
+                <input type="text" placeholder="Nom complet" style="padding: 18px; border-radius: 12px; border: 1px solid #EEE; background: #F9F9F9; font-family: inherit;">
+                <input type="email" placeholder="Votre Email" style="padding: 18px; border-radius: 12px; border: 1px solid #EEE; background: #F9F9F9; font-family: inherit;">
+                <textarea placeholder="Votre message" rows="5" style="padding: 18px; border-radius: 12px; border: 1px solid #EEE; background: #F9F9F9; font-family: inherit; resize: none;"></textarea>
+                <button type="submit" class="btn-filled-dark" style="justify-content: center; padding: 20px;">Envoyer le message</button>
+            </form>
+        </div>
+        <div style="background: var(--brand-02); padding: 50px; border-radius: 32px; display: flex; flex-direction: column; justify-content: center;">
+            <div style="display: flex; flex-direction: column; grid-gap: 32px;">
+                <div style="display: flex; grid-gap: 20px;">
+                    <span class="material-symbols-outlined" style="color: var(--brand-01);">call</span>
+                    <div>
+                        <strong style="display: block; margin-bottom: 4px;">Téléphone</strong>
+                        <p style="opacity: 0.7;">01 23 45 67 89</p>
+                    </div>
+                </div>
+                <div style="display: flex; grid-gap: 20px;">
+                    <span class="material-symbols-outlined" style="color: var(--brand-01);">mail</span>
+                    <div>
+                        <strong style="display: block; margin-bottom: 4px;">Email</strong>
+                        <p style="opacity: 0.7;">contact@amapet.fr</p>
+                    </div>
+                </div>
+                <div style="display: flex; grid-gap: 20px;">
+                    <span class="material-symbols-outlined" style="color: var(--brand-01);">schedule</span>
+                    <div>
+                        <strong style="display: block; margin-bottom: 4px;">Horaires</strong>
+                        <p style="opacity: 0.7;">Lun - Sam : 9h00 - 19h00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg width="32" height="26" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 32H0V21.9849C0 17.1239 4.0116 13.1839 8.96 13.1839H15.2V0.468341C15.2 0.251458 15.3792 0.0754376 15.6 0.0754376C15.7184 0.0754376 15.8308 0.127301 15.9068 0.216883L17.3616 1.92719C18.402 1.07577 19.74 0.563816 21.2 0.563816H22C23.442 0.563816 24.7656 1.06359 25.8 1.89654L27.2932 0.14066C27.3692 0.0514706 27.4812 0 27.6 0C27.8208 0 28 0.175628 28 0.392904V15.3896H23.36C17.528 15.3896 12.8 20.0337 12.8 25.7623V32Z" fill="#DB7F67" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.76 17.0569V12.0875C29.76 12.0836 29.76 12.0797 29.76 12.0758V6.79004C29.76 6.57435 29.9392 6.4 30.16 6.4C30.266 6.4 30.3676 6.44095 30.4424 6.51389L31.9576 7.98784C32.7864 7.42501 33.7936 7.09504 34.88 7.09504C35.97 7.09504 36.9808 7.42735 37.8112 7.99369L39.3176 6.52793C39.3924 6.45499 39.494 6.41404 39.6 6.41404C39.8208 6.41404 40 6.58878 40 6.80408V23.2632C40 28.0883 35.9884 32 31.04 32H14.4V25.7938C14.4 20.969 18.4116 17.0569 23.36 17.0569H29.76Z" fill="#DB7F67" />
+                    </svg>
+                    <span>L'Amapet</span>
+                </div>
+                <p>Votre partenaire de confiance pour le bien-être animal depuis 2014.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon"><span class="material-symbols-outlined">facebook</span></a>
+                    <a href="#" class="social-icon"><span class="material-symbols-outlined">photo_camera</span></a>
+                    <a href="#" class="social-icon"><span class="material-symbols-outlined">alternate_email</span></a>
+                </div>
             </div>
 
             <div class="footer-links-column">
-                <span class="footer-links-title">Par Animal</span>
+                <span class="footer-links-title">Navigation</span>
                 <ul class="footer-links-list">
-                    <li><a href="#">Chiens</a></li>
-                    <li><a href="#">Chats</a></li>
-                    <li><a href="#">Oiseaux</a></li>
-                    <li><a href="#">Poissons</a></li>
+                    <li><a href="#products">Produits</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer-links-column">
                 <span class="footer-links-title">Services</span>
                 <ul class="footer-links-list">
-                    <li><a href="#">Toilettage</a></li>
-                    <li><a href="#">Pension Canine</a></li>
-                    <li><a href="#">Formation</a></li>
-                    <li><a href="#">Conseils Experts</a></li>
+                    <li><a href="#services">Toilettage</a></li>
+                    <li><a href="#services">Pension</a></li>
+                    <li><a href="#services">Formation</a></li>
                 </ul>
             </div>
 
             <div class="footer-links-column">
                 <span class="footer-links-title">L'Amapet</span>
                 <ul class="footer-links-list">
-                    <li><a href="#">Nos Magasins</a></li>
-                    <li><a href="#">Qui sommes-nous ?</a></li>
-                    <li><a href="#">Carrières</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#locate">Nos Magasins</a></li>
+                    <li><a href="#about">Histoire</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -406,7 +412,7 @@
             <div class="footer-bottom-links">
                 <a href="#">Mentions Légales</a>
                 <a href="#">CGU</a>
-                <a href="#">Politique de Confidentialité</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </footer>
