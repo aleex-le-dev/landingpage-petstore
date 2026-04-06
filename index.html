@@ -269,87 +269,146 @@
         </div>
     </section>
 
-    <section id="locate" style="background-image: linear-gradient(rgba(45, 42, 38, 0.7), rgba(45, 42, 38, 0.7)), url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; border-radius: 20px; padding: 100px var(--pg-margin); color: white;">
-        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-            <h2 style="color: white; margin-bottom: 20px;">Venez nous rendre visite</h2>
-            <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 40px; color: rgba(255, 255, 255, 0.9);">Découvrez nos boutiques chaleureuses et profitez de l'expertise de notre équipe passionnée pour le bien-être de vos animaux.</p>
-            <div class="btn-group" style="justify-content: center;">
-                <button class="btn-filled-dark" style="background: var(--brand-01); border-color: var(--brand-01);"><span class="material-symbols-outlined">pin_drop</span>Trouver un magasin</button>
-                <button class="btn-outline-dark" style="color: white; border-color: white;"><span class="material-symbols-outlined">contact_support</span> Contactez-nous</button>
+    <section id="locate" class="locate-section">
+        <div class="locate-banner">
+            <h2>Venez nous rendre visite</h2>
+            <p>Découvrez nos boutiques chaleureuses et profitez de l'expertise de notre équipe passionnée pour le bien-être de vos animaux.</p>
+            
+            <div class="btn-group">
+                <button class="btn-filled-dark" style="background: var(--brand-01); border-color: var(--brand-01);">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    Nos Magasins
+                </button>
+                <button class="btn-outline-dark" style="color: white; border-color: white;">
+                    <span class="material-symbols-outlined">contact_support</span> 
+                    Contactez-nous
+                </button>
+            </div>
+
+            <!-- Ajout d'infos premium: Horaires & Localisation -->
+            <div class="locate-info-grid">
+                <div class="info-item">
+                    <span class="material-symbols-outlined icon">schedule</span>
+                    <strong>Horaires Boutique</strong>
+                    <span>Lun - Sam: 9h - 19h</span>
+                </div>
+                <div class="info-item">
+                    <span class="material-symbols-outlined icon">pets</span>
+                    <strong>Toilettage & Spa</strong>
+                    <span>Sur RDV uniquement</span>
+                </div>
+                <div class="info-item">
+                    <span class="material-symbols-outlined icon">location_on</span>
+                    <strong>Siège Social</strong>
+                    <span>Paris, 75008</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="gallery" style="padding: 100px var(--pg-margin); background: white;">
+    <section id="gallery" class="gallery-section">
         <h2 style="margin-bottom: 60px;">Instants de bonheur</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); grid-gap: 20px;">
-            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=400" alt="Pet 1" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; transition: var(--hover-timing); cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&q=80&w=400" alt="Pet 2" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; transition: var(--hover-timing); cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            <img src="https://images.unsplash.com/photo-1444212477490-ca407925329e?auto=format&fit=crop&q=80&w=400" alt="Pet 3" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; transition: var(--hover-timing); cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&q=80&w=400" alt="Pet 4" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; transition: var(--hover-timing); cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            <img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&q=80&w=400" alt="Pet 5" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; transition: var(--hover-timing); cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            <img src="https://images.unsplash.com/photo-1517610822449-4321877649d7?auto=format&fit=crop&q=80&w=400" alt="Pet 6" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; transition: var(--hover-timing); cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&q=80&w=800" alt="Pet 1">
+                <div class="gallery-overlay"><span class="material-symbols-outlined">favorite</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=400" alt="Pet 2">
+                <div class="gallery-overlay"><span class="material-symbols-outlined">favorite</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1444212477490-ca407925329e?auto=format&fit=crop&q=80&w=400" alt="Pet 3">
+                <div class="gallery-overlay"><span class="material-symbols-outlined">favorite</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&q=80&w=400" alt="Pet 4">
+                <div class="gallery-overlay"><span class="material-symbols-outlined">favorite</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&q=80&w=800" alt="Pet 5">
+                <div class="gallery-overlay"><span class="material-symbols-outlined">favorite</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517610822449-4321877649d7?auto=format&fit=crop&q=80&w=400" alt="Pet 6">
+                <div class="gallery-overlay"><span class="material-symbols-outlined">favorite</span></div>
+            </div>
         </div>
     </section>
 
     <footer>
-
-        <ul style="flex: 1.5;">
-            <div id="logo-footer" style="margin-bottom: 24px;">
-                <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 32H0V21.9849C0 17.1239 4.0116 13.1839 8.96 13.1839H15.2V0.468341C15.2 0.251458 15.3792 0.0754376 15.6 0.0754376C15.7184 0.0754376 15.8308 0.127301 15.9068 0.216883L17.3616 1.92719C18.402 1.07577 19.74 0.563816 21.2 0.563816H22C23.442 0.563816 24.7656 1.06359 25.8 1.89654L27.2932 0.14066C27.3692 0.0514706 27.4812 0 27.6 0C27.8208 0 28 0.175628 28 0.392904V15.3896H23.36C17.528 15.3896 12.8 20.0337 12.8 25.7623V32Z" fill="#DB7F67" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.76 17.0569V12.0875C29.76 12.0836 29.76 12.0797 29.76 12.0758V6.79004C29.76 6.57435 29.9392 6.4 30.16 6.4C30.266 6.4 30.3676 6.44095 30.4424 6.51389L31.9576 7.98784C32.7864 7.42501 33.7936 7.09504 34.88 7.09504C35.97 7.09504 36.9808 7.42735 37.8112 7.99369L39.3176 6.52793C39.3924 6.45499 39.494 6.41404 39.6 6.41404C39.8208 6.41404 40 6.58878 40 6.80408V23.2632C40 28.0883 35.9884 32 31.04 32H14.4V25.7938C14.4 20.969 18.4116 17.0569 23.36 17.0569H29.76Z" fill="#DB7F67" />
-                </svg>
-                <div style="font-weight: 700; color: white; margin-top: 8px;">L'Amapet Boutique</div>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg width="32" height="26" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 32H0V21.9849C0 17.1239 4.0116 13.1839 8.96 13.1839H15.2V0.468341C15.2 0.251458 15.3792 0.0754376 15.6 0.0754376C15.7184 0.0754376 15.8308 0.127301 15.9068 0.216883L17.3616 1.92719C18.402 1.07577 19.74 0.563816 21.2 0.563816H22C23.442 0.563816 24.7656 1.06359 25.8 1.89654L27.2932 0.14066C27.3692 0.0514706 27.4812 0 27.6 0C27.8208 0 28 0.175628 28 0.392904V15.3896H23.36C17.528 15.3896 12.8 20.0337 12.8 25.7623V32Z" fill="#DB7F67" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.76 17.0569V12.0875C29.76 12.0836 29.76 12.0797 29.76 12.0758V6.79004C29.76 6.57435 29.9392 6.4 30.16 6.4C30.266 6.4 30.3676 6.44095 30.4424 6.51389L31.9576 7.98784C32.7864 7.42501 33.7936 7.09504 34.88 7.09504C35.97 7.09504 36.9808 7.42735 37.8112 7.99369L39.3176 6.52793C39.3924 6.45499 39.494 6.41404 39.6 6.41404C39.8208 6.41404 40 6.58878 40 6.80408V23.2632C40 28.0883 35.9884 32 31.04 32H14.4V25.7938C14.4 20.969 18.4116 17.0569 23.36 17.0569H29.76Z" fill="#DB7F67" />
+                    </svg>
+                    <span>L'Amapet</span>
+                </div>
+                <p>Votre animalerie de confiance spécialisée dans le bien-être animal depuis 2014. Nous sélectionnons le meilleur pour vos compagnons.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon"><span class="material-symbols-outlined">facebook</span></a>
+                    <a href="#" class="social-icon"><span class="material-symbols-outlined">photo_camera</span></a>
+                    <a href="#" class="social-icon"><span class="material-symbols-outlined">alternate_email</span></a>
+                </div>
+                <div class="payment-methods">
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard">
+                    <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="Paypal">
+                    <img src="https://img.icons8.com/color/48/000000/apple-pay.png" alt="Apple Pay">
+                </div>
             </div>
-            <p style="color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.6; margin-bottom: 24px;">Votre partenaire de confiance pour le bonheur de vos animaux depuis 2014.</p>
-            <div style="display: flex; grid-gap: 16px; margin-bottom: 32px;">
-                <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa" style="height: 32px;">
-                <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard" style="height: 32px;">
-                <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="Paypal" style="height: 32px;">
-                <img src="https://img.icons8.com/color/48/000000/apple-pay.png" alt="Apple Pay" style="height: 32px;">
+
+            <div class="footer-links-column">
+                <span class="footer-links-title">Produits</span>
+                <ul class="footer-links-list">
+                    <li><a href="#">Alimentation Premium</a></li>
+                    <li><a href="#">Jouets Interactifs</a></li>
+                    <li><a href="#">Repos & Confort</a></li>
+                    <li><a href="#">Hygiène & Soins</a></li>
+                </ul>
             </div>
-            <div style="display: flex; grid-gap: 12px;">
-                <span class="material-symbols-outlined" style="cursor: pointer;">facebook</span>
-                <span class="material-symbols-outlined" style="cursor: pointer;">photo_camera</span>
-                <span class="material-symbols-outlined" style="cursor: pointer;">alternate_email</span>
+
+            <div class="footer-links-column">
+                <span class="footer-links-title">Par Animal</span>
+                <ul class="footer-links-list">
+                    <li><a href="#">Chiens</a></li>
+                    <li><a href="#">Chats</a></li>
+                    <li><a href="#">Oiseaux</a></li>
+                    <li><a href="#">Poissons</a></li>
+                </ul>
             </div>
-        </ul>
-        <ul>
-            <strong>Produits</strong>
-            <li><a href="#">Alimentation</a></li>
-            <li><a href="#">Jouets</a></li>
-            <li><a href="#">Mobilier & Confort</a></li>
-            <li><a href="#">Sorties & Transport</a></li>
-            <li><a href="#">Hygiène & Soins</a></li>
-            <li><a href="#">Aquariophilie</a></li>
-        </ul>
 
-        <ul>
-            <strong>Par Animal</strong>
-            <li><a href="#">Chiens</a></li>
-            <li><a href="#">Chats</a></li>
-            <li><a href="#">Oiseaux</a></li>
-            <li><a href="#">Poissons</a></li>
-            <li><a href="#">Petits Mammifères</a></li>
-        </ul>
+            <div class="footer-links-column">
+                <span class="footer-links-title">Services</span>
+                <ul class="footer-links-list">
+                    <li><a href="#">Toilettage</a></li>
+                    <li><a href="#">Pension Canine</a></li>
+                    <li><a href="#">Formation</a></li>
+                    <li><a href="#">Conseils Experts</a></li>
+                </ul>
+            </div>
 
+            <div class="footer-links-column">
+                <span class="footer-links-title">L'Amapet</span>
+                <ul class="footer-links-list">
+                    <li><a href="#">Nos Magasins</a></li>
+                    <li><a href="#">Qui sommes-nous ?</a></li>
+                    <li><a href="#">Carrières</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
-        <ul>
-            <strong>Nos Services</strong>
-            <li><a href="#">Toilettage</a></li>
-            <li><a href="#">Pension Canine</a></li>
-            <li><a href="#">École de dressage</a></li>
-        </ul>
-        <ul>
-            <strong>L'Entreprise</strong>
-            <li><a href="#">Nos Magasins</a></li>
-            <li><a href="#">Qui sommes-nous ?</a></li>
-            <li><a href="#">Carrières</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-
-
+        <div class="footer-bottom">
+            <p>© 2026 L'Amapet Boutique. Tous droits réservés.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Mentions Légales</a>
+                <a href="#">CGU</a>
+                <a href="#">Politique de Confidentialité</a>
+            </div>
+        </div>
     </footer>
     
 </body>
